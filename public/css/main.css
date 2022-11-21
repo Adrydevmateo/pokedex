@@ -1,5 +1,7 @@
+/* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* Variables de estilo */
 :root {
   --body-background: #333333;
   --h1: #e6c536;
@@ -10,12 +12,14 @@
   --card--id-background: #cebf7b;
 }
 
+/* Reglas Generales */
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
 
+/* Reglas de Elementos */
 body {
   background-color: var(--body-background);
 }
@@ -32,6 +36,7 @@ h1 {
   text-align: center;
 }
 
+/* Reglas para selectores de id */
 #app {
   display: flex;
   flex-direction: column;
@@ -41,6 +46,7 @@ h1 {
   padding-top: 1rem;
 }
 
+/* Reglas para selectores de clase */
 .card {
   width: 14rem;
   height: 14rem;
@@ -81,7 +87,9 @@ h1 {
   color: var(--card--pokemon-type);
 }
 
+/* Media Queries */
 @media only screen and (min-width: 768px) {
+  /* Contenedor para todas las cartas */
   #app {
     gap: 1.4rem;
     flex-direction: row;
